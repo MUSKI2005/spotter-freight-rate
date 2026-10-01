@@ -1,0 +1,46 @@
+{
+  "selected": "cb_log_huber",
+  "best_single": "cb_log_huber",
+  "blend_weights": {
+    "cb_direct_rmse": 0.09729666204462112,
+    "cb_log_rmse": 0.1572022790362693,
+    "cb_log_huber": 0.50086761681402,
+    "cb_rpm_rmse": 0.24463344210508955
+  },
+  "models_evaluated": [
+    "cb_direct_rmse",
+    "cb_direct_huber",
+    "cb_log_rmse",
+    "cb_log_huber",
+    "cb_rpm_rmse"
+  ],
+  "huber_usd_frac": 0.5,
+  "huber_delta_log": 0.3,
+  "smooth_k": 20,
+  "smooth_k_window": 5,
+  "windows_days": [
+    30,
+    90
+  ],
+  "region_clusters": 25,
+  "inner_es_frac": 0.12,
+  "catboost": {
+    "depth": 8,
+    "learning_rate": 0.05,
+    "max_iters": 1500
+  },
+  "best_iterations_october": {
+    "cb_direct_rmse": 105,
+    "cb_direct_huber": 79,
+    "cb_log_rmse": 128,
+    "cb_log_huber": 1488,
+    "cb_rpm_rmse": 68
+  },
+  "smear_factors_october": {
+    "cb_direct_rmse": 1.0,
+    "cb_direct_huber": 1.0,
+    "cb_log_rmse": 1.0269779174066695,
+    "cb_log_huber": 1.0323130122914872,
+    "cb_rpm_rmse": 1.0
+  }
+}
